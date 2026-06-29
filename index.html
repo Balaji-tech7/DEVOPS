@@ -1,9 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DevOps Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Automated Deployment Pipeline</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            overflow:hidden;
+        }
+
+        body::before{
+            content:"";
+            position:absolute;
+            width:400px;
+            height:400px;
+            background:#00d4ff;
+            border-radius:50%;
+            filter:blur(180px);
+            top:-100px;
+            left:-100px;
+            opacity:.3;
+        }
+
+        body::after{
+            content:"";
+            position:absolute;
+            width:350px;
+            height:350px;
+            background:#4CAF50;
+            border-radius:50%;
+            filter:blur(170px);
+            bottom:-100px;
+            right:-100px;
+            opacity:.25;
+        }
+
+        .container{
+            position:relative;
+            z-index:1;
+            width:90%;
+            max-width:850px;
+            text-align:center;
+            padding:50px;
+            border-radius:25px;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(15px);
+            border:1px solid rgba(255,255,255,0.15);
+            color:white;
+            box-shadow:0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        .icon{
+            font-size:70px;
+            color:#00e5ff;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:20px;
+            font-weight:700;
+        }
+
+        p{
+            font-size:18px;
+            line-height:1.8;
+            color:#e0e0e0;
+            margin-bottom:20px;
+        }
+
+        .features{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            margin:35px 0;
+        }
+
+        .feature{
+            background:rgba(255,255,255,.1);
+            padding:18px 25px;
+            border-radius:15px;
+            min-width:160px;
+            transition:.3s;
+        }
+
+        .feature:hover{
+            transform:translateY(-8px);
+            background:rgba(0,212,255,.2);
+        }
+
+        .feature i{
+            font-size:28px;
+            color:#00e5ff;
+            margin-bottom:10px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:15px 35px;
+            background:#00bcd4;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:30px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#0097a7;
+            transform:scale(1.05);
+        }
+
+        footer{
+            margin-top:40px;
+            font-size:14px;
+            color:#cccccc;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:30px;
+            }
+
+            p{
+                font-size:16px;
+            }
+
+            .container{
+                padding:30px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 <body>
+
+<div class="container">
+
+    <div class="icon">
+        <i class="fas fa-cloud"></i>
+    </div>
+
     <h1>Welcome to DevOps Automated Deployment Pipeline</h1>
+
+    <p>
+        Experience a modern Continuous Integration and Continuous Deployment
+        (CI/CD) workflow designed to automate software delivery with speed,
+        reliability, and scalability.
+    </p>
+
+    <p>
+        This project demonstrates the complete DevOps lifecycle using industry
+        best practices including automated build, testing, deployment,
+        infrastructure management, monitoring, and version control.
+    </p>
+
+    <div class="features">
+
+        <div class="feature">
+            <i class="fas fa-code-branch"></i>
+            <h3>Git</h3>
+            <p>Version Control</p>
+        </div>
+
+        <div class="feature">
+            <i class="fas fa-cogs"></i>
+            <h3>CI/CD</h3>
+            <p>Automation</p>
+        </div>
+
+        <div class="feature">
+            <i class="fab fa-docker"></i>
+            <h3>Docker</h3>
+            <p>Containerization</p>
+        </div>
+
+        <div class="feature">
+            <i class="fas fa-server"></i>
+            <h3>Deployment</h3>
+            <p>Production Ready</p>
+        </div>
+
+    </div>
+
+    <a href="#" class="btn">
+        Explore Project
+    </a>
+
+    <footer>
+        © 2026 DevOps Automated Deployment Pipeline | Designed for Modern Cloud Applications
+    </footer>
+
+</div>
+
 </body>
 </html>
